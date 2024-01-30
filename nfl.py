@@ -1,3 +1,5 @@
+## This script will pull the average weight of each NFL team and write it to a CSV file
+
 import csv
 import json
 import requests
