@@ -1,6 +1,6 @@
 # Random Scripts
 
-This repository is a collection of scripts of varying degrees of usefulness and complexity. From mundane tasks to experiments, it houses a wide range of code snippets that may catch your interest.
+This repository is a collection of scripts of varying degrees of usefulness and complexity. From mundane tasks to quick experiments, it houses a wide range of code snippets that may catch your interest.
 
 ## Getting Started
 
