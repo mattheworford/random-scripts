@@ -8,7 +8,7 @@ import yaml
 with open("secrets.yml", "r") as stream:
     secrets = yaml.safe_load(stream)
     teams_url = 'https://api.sportsdata.io/v3/nfl/scores/json/Teams'
-    headers = {'Ocp-Apim-Subscription-Key': secrets["ocp-apim.subscription-key"]}
+    headers = {'Ocp-Apim-Subscription-Key': secrets["ocp-apim"]["subscription-key"]}
     teams_response = requests.get(teams_url, headers=headers)
     teams = json.loads(teams_response.text)
 
