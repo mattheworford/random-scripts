@@ -1,3 +1,20 @@
+"""
+To run this script, you need to have Python installed on your system along with the required libraries: csv, json, requests, yaml, logging, and collections.
+
+You can install the required libraries using pip:
+pip install pyyaml requests
+
+You also need to have a secrets.yml file in the same directory as this script. The secrets.yml file should contain your subscription key for the sportsdata.io API in the following format:
+
+ocp-apim:
+  subscription-key: YOUR_SUBSCRIPTION_KEY
+
+Once you have Python and the required libraries installed, and the secrets.yml file set up, you can run the script from the command line as follows:
+
+python nfl_weights.py
+
+This will create a CSV file named nfl_weights.csv in the same directory as the script, containing the total weight, number of players, and average weight for each NFL team.
+"""
 import csv
 import json
 import requests

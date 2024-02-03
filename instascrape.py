@@ -1,3 +1,23 @@
+"""
+To run this script, you need to have Python installed on your system along with the required libraries: instaloader, yaml, and logging.
+
+You can install the required libraries using pip:
+pip install instaloader pyyaml
+
+You also need to have a secrets.yml file in the same directory as this script. The secrets.yml file should contain your Instagram credentials in the following format:
+
+instagram:
+  credentials:
+    username: YOUR_USERNAME
+    password: YOUR_PASSWORD
+
+Once you have Python and the required libraries installed, and the secrets.yml file set up, you can run the script from the command line as follows:
+
+python instascrape.py
+
+When prompted, enter the username of the Instagram account you want to scrape. The script will then scrape the followers of that account and save them to a file named followers.txt in the same directory as the script.
+"""
+
 import instaloader
 import yaml
 import logging
