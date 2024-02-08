@@ -1,7 +1,25 @@
+"""
+This script is used to scrape battle-related pages from Wikipedia. It prompts the user to enter the name of a Wikipedia list to scrape. It then goes through each link in the list, checks if the link is a battle page (not a list), and if it is, it scrapes the text from the page, removes certain words (like "References", "==", etc.), and writes the text to a separate file for each battle in the "battleTexts" directory.
+
+To run this script, you need to have Python installed on your system along with the required libraries: wikipediaapi, logging, os, and yaml.
+
+You can install the required libraries using pip:
+pip install wikipedia-api pyyaml
+
+You also need to have a secrets.yml file in the same directory as this script. The secrets.yml file should contain your user-agent for the Wikipedia API in the following format:
+
+wikipedia:
+  user-agent: YOUR_USER_AGENT
+
+Once you have Python and the required libraries installed, and the secrets.yml file set up, you can run the script from the command line as follows:
+
+python multiDoc.py
+
+When prompted, enter the name of the Wikipedia list you want to scrape. The script will then scrape the battle pages from that list and write them to separate files in the "battleTexts" directory.
+"""
 import wikipediaapi
 import logging
 import os
-
 import yaml
 
 OUTPUT_DIR = "./battleTexts/"
