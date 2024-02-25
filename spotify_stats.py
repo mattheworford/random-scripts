@@ -62,14 +62,19 @@ def print_top_tracks(tracks):
         print(f"{i}. {track['name']} by {track['artists'][0]['name']}")
 
 
-creds = load_secrets("secrets.yml")
+def main():
+    creds = load_secrets("secrets.yml")
 
-sp = authenticate_spotify(creds)
+    sp = authenticate_spotify(creds)
 
-top_artists = get_top_artists(sp)
-print_top_artists(top_artists)
+    top_artists = get_top_artists(sp)
+    print_top_artists(top_artists)
 
-print("\n")
+    print("\n")
 
-top_tracks = get_top_tracks(sp)
-print_top_tracks(top_tracks)
+    top_tracks = get_top_tracks(sp)
+    print_top_tracks(top_tracks)
+
+
+if __name__ == "__main__":
+    main()
