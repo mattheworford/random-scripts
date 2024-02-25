@@ -22,7 +22,7 @@ wikipedia:
 Once you have Python and the required libraries installed, and the secrets.yml 
 file set up, you can run the script from the command line as follows:
 
-python singleDoc.py
+python single_doc.py
 
 When prompted, enter the name of the Wikipedia list you want to scrape. The 
 script will then scrape the pages from that list and append them to the 

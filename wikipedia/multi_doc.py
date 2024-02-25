@@ -22,7 +22,7 @@ wikipedia:
 Once you have Python and the required libraries installed, and the secrets.yml 
 file set up, you can run the script from the command line as follows:
 
-python multiDoc.py
+python multi_doc.py
 
 When prompted, enter the name of the Wikipedia list you want to scrape and the 
 name of the desired output directory. The script will then scrape the pages 
