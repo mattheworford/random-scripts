@@ -1,3 +1,4 @@
 secrets.yml
 nfl_weights.csv
 followers.txt
+.cache
