@@ -55,7 +55,7 @@ def get_top_track_ids(sp, limit=10, time_range="medium_term"):
         tracks = sp.current_user_top_tracks(limit=limit, time_range=time_range)
         return [track["id"] for track in tracks["items"]]
     except Exception as e:
-        print(f"Error fetching top tracks: {e}")
+        print(f"Error fetching top track ids: {e}")
         exit(1)
 
 
