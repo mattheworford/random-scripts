@@ -1,7 +1,10 @@
 """
-This script uses the Spotify Web API to fetch and print a user's top artists and tracks on Spotify.
+This script uses the Spotify Web API to fetch and print a user's top artists 
+and tracks on Spotify.
 
-To run this script, you need to have a `secrets.yml` file in the same directory as the script. The `secrets.yml` file should contain your Spotify API client ID and client secret in the following format:
+To run this script, you need to have a `secrets.yml` file in the same 
+directory as the script. The `secrets.yml` file should contain your Spotify API
+client ID and client secret in the following format:
 
 ```yaml
 spotify:
