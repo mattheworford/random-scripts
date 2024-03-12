@@ -1,3 +1,23 @@
+"""
+This script uses the Spotify Web API to fetch and print a user's top artists and tracks on Spotify.
+
+To run this script, you need to have a `secrets.yml` file in the same directory as the script. The `secrets.yml` file should contain your Spotify API client ID and client secret in the following format:
+
+```yaml
+spotify:
+  client_id: YOUR_CLIENT_ID
+  client_secret: YOUR_CLIENT_SECRET
+```
+
+You can then run the script from the command line like so:
+
+```bash
+python3 spotify_stats.py
+```
+
+This will print your top artists and tracks on Spotify.
+"""
+
 from collections import namedtuple
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
