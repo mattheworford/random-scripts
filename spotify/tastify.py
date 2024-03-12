@@ -1,3 +1,30 @@
+"""
+This script, tastify.py, uses the Spotify Web API to create a new playlist 
+based on a user's existing playlist and their top tracks. The new playlist is a
+mix of tracks from the original playlist, the user's top tracks, and new 
+recommendations based on these tracks.
+
+To run this script, you need to have a `secrets.yml` file in the same directory 
+as the script. The `secrets.yml` file should contain your Spotify API client ID 
+and client secret in the following format:
+
+```yaml
+spotify:
+  client_id: YOUR_CLIENT_ID
+  client_secret: YOUR_CLIENT_SECRET
+```
+
+You can then run the script from the command line like so:
+
+```bash
+python3 tastify.py
+```
+
+When prompted, enter the URL of the Spotify playlist you want to 'tastify'. The
+script will then create a new playlist based on your top tracks and the tracks
+in the specified playlist. 
+"""
+
 from collections import namedtuple
 import random
 import re
