@@ -1,3 +1,7 @@
+# Ruby script for a simple to-do list manager.
+
+# Run the script from the command line like so: `ruby todo_list.rb`
+
 class TodoList
   attr_accessor :tasks
 
